@@ -1,0 +1,224 @@
+<Defs>
+  <DesignatorDropdownGroupDef>
+    <defName>GET_GeneNode_BS</defName>
+    <label>Gene Node - BS</label>
+  </DesignatorDropdownGroupDef>
+
+  <ThingDef ParentName="GET_GeneNodeTrueArchite">
+    <defName>GET_BudgetDeathless</defName>
+    <label>Gene Node - Flawed Deathless</label>
+    <description>"Unworthy deserve only but a taste."</description>
+    <costList Inherit="False">
+      <Steel>50</Steel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+      <ComponentSpacer>1</ComponentSpacer>
+      <ArchiteCapsule>1</ArchiteCapsule>
+    </costList>
+    <graphicData>
+      <texPath>GeneNodes/GET_GeneNode_BudgetDeathless</texPath>
+    </graphicData>
+    <descriptionHyperlinks>
+      <GeneDef>Deathless</GeneDef>
+      <GeneDef>BS_LesserDeathless</GeneDef>
+    </descriptionHyperlinks>
+    <comps>
+      <li Class="GeneExtractorTiers.CompProperties_GeneNode">
+        <geneSetList>
+          <li>
+            <geneList>
+              <li>Deathless</li>
+              <li>BS_LesserDeathless</li>
+            </geneList>
+          </li>
+        </geneSetList>
+        <Faction>GET_DarkArchotech</Faction>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="GET_GeneNodeBaseArchite">
+    <defName>GET_RepairApparel</defName>
+    <label>Gene Node - Preserve Apparel</label>
+    <description>"Preserve your apparel with the power of nano-machines". No refunds.</description>
+    <graphicData>
+      <texPath>GeneNodes/GET_GeneNode_ApparelRepair</texPath>
+    </graphicData>
+    <designatorDropdown>GET_GeneNode_BS</designatorDropdown>
+    <descriptionHyperlinks>
+      <GeneDef>BS_SelfRepairingApparel</GeneDef>
+      <GeneDef>BS_IndestructibleApparel</GeneDef>
+    </descriptionHyperlinks>
+    <comps>
+      <li Class="GeneExtractorTiers.CompProperties_GeneNode">
+        <geneList>
+          <li>BS_SelfRepairingApparel</li>
+          <li>BS_IndestructibleApparel</li>
+        </geneList>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="GET_GeneNodeBaseArchite">
+    <defName>GET_Ogre</defName>
+    <label>Gene Node - Ogre</label>
+    <description>"Early research attempts into larger hominids. Still fairly relevant today.". No refunds.</description>
+    <graphicData>
+      <texPath>GeneNodes/GET_GeneNode_Ogre</texPath>
+    </graphicData>
+    <designatorDropdown>GET_GeneNode_BS</designatorDropdown>
+    <descriptionHyperlinks>
+      <GeneDef>OgreFrame</GeneDef>
+      <GeneDef>HalfColossusFrame</GeneDef>
+      <GeneDef>Beauty_VeryUgly</GeneDef>
+      <GeneDef>Gigantism</GeneDef>
+      <GeneDef>Instability_Major</GeneDef>
+      <GeneDef>BS_CannotWearClothingOrArmor</GeneDef>
+      <GeneDef>BS_CannotWearClothing</GeneDef>
+      <GeneDef>BS_CannotWearArmor</GeneDef>
+    </descriptionHyperlinks>
+    <comps>
+      <li Class="GeneExtractorTiers.CompProperties_GeneNode">
+        <geneList>
+          <li>OgreFrame</li>
+          <li>HalfColossusFrame</li>
+          <li>Beauty_VeryUgly</li>
+          <li>BS_CannotWearClothingOrArmor</li>
+          <li>BS_CannotWearClothing</li>
+          <li>BS_CannotWearArmor</li>
+        </geneList>
+        <geneSetList>
+          <li>
+            <geneList>
+              <li>Gigantism</li>
+              <li>Instability_Major</li>
+            </geneList>
+          </li>
+        </geneSetList>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="GET_GeneNodeBaseArchite">
+    <defName>GET_Smol</defName>
+    <label>Gene Node - Smol</label>
+    <description>"Small bodies are often useful for maintainance on space ships and certain space station roles, and to that end [...]". No refunds.</description>
+    <graphicData>
+      <texPath>GeneNodes/GET_GeneNode_Gnome</texPath>
+    </graphicData>
+    <designatorDropdown>GET_GeneNode_BS</designatorDropdown>
+    <descriptionHyperlinks>
+      <GeneDef>BS_Ears_PointedHD</GeneDef>
+      <GeneDef>BS_DvergrConstitution</GeneDef>
+      <GeneDef>DwarfFrame</GeneDef>
+      <GeneDef>GnomeFrame</GeneDef>
+      <GeneDef>BS_TinyTough</GeneDef>
+      <GeneDef>MoveSpeed_VeryQuick</GeneDef>
+    </descriptionHyperlinks>
+    <comps>
+      <li Class="GeneExtractorTiers.CompProperties_GeneNode">
+        <geneList>
+          <li>BS_Ears_PointedHD</li>
+          <li>BS_DvergrConstitution</li>
+          <li>DwarfFrame</li>
+          <li>GnomeFrame</li>
+          <li>BS_TinyTough</li>
+          <li>MoveSpeed_VeryQuick</li>
+        </geneList>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="GET_GeneNodeBaseArchite">
+    <defName>GET_Psychic</defName>
+    <label>Gene Node - Psycaster</label>
+    <description>"How 'bout the power to kill a yak from 200 yards away... with mind bullets! That's telekinesis, Kyle.". No refunds. Psycast Neuroformers not included..</description>
+    <graphicData>
+      <texPath>GeneNodes/GET_GeneNode_Psycaster</texPath>
+    </graphicData>
+    <designatorDropdown>GET_GeneNode_BS</designatorDropdown>
+    <descriptionHyperlinks>
+      <GeneDef>BS_EltexPsychic</GeneDef>
+      <GeneDef>BS_Glamour</GeneDef>
+      <GeneDef>BS_PsychicWarrior</GeneDef>
+      <GeneDef MayRequire="sarg.alphagenes">AG_PsychicSight</GeneDef>
+    </descriptionHyperlinks>
+    <comps>
+      <li Class="GeneExtractorTiers.CompProperties_GeneNode">
+        <geneList>
+          <li>BS_EltexPsychic</li>
+          <li>BS_Glamour</li>
+          <li>BS_PsychicWarrior</li>
+          <li MayRequire="sarg.alphagenes">AG_PsychicSight</li>
+        </geneList>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="GET_GeneNodeTrueArchite">
+    <defName>GET_SoulPower</defName>
+    <label>Gene Node - Anomalous Power</label>
+    <description>Unleach the void."</description>
+    <costList Inherit="False">
+      <Steel>50</Steel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+      <ComponentSpacer>1</ComponentSpacer>
+      <ArchiteCapsule>1</ArchiteCapsule>
+    </costList>
+    <graphicData>
+      <texPath>GeneNodes/GET_GeneNode_SoulPower</texPath>
+    </graphicData>
+    <descriptionHyperlinks>
+      <GeneDef>BS_SoulPower</GeneDef>
+      <GeneDef>BS_SoulPowerGreat</GeneDef>
+      <GeneDef>BS_TrueForm_Angelic</GeneDef>
+      <GeneDef>BS_TrueForm_Demonic</GeneDef>
+      <GeneDef>BS_TrueForm_Goliath</GeneDef>
+    </descriptionHyperlinks>
+    <comps>
+      <li Class="GeneExtractorTiers.CompProperties_GeneNode">
+        <geneList>
+          <li>BS_SoulPower</li>
+          <li>BS_SoulPowerGreat</li>
+          <li>BS_AnomalousPsychicPower</li>
+          <li>BS_TrueForm_Angelic</li>
+          <li>BS_TrueForm_Demonic</li>
+          <li>BS_TrueForm_Goliath</li>
+        </geneList>
+        <Faction>GET_DarkArchotech</Faction>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="GET_GeneNodeTrueArchite">
+    <defName>GET_SoulStealer</defName>
+    <label>Gene Node - Soul Siphon</label>
+    <description>Unleach the void."</description>
+    <costList Inherit="False">
+      <Steel>50</Steel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+      <ComponentSpacer>1</ComponentSpacer>
+      <ArchiteCapsule>1</ArchiteCapsule>
+    </costList>
+    <graphicData>
+      <texPath>GeneNodes/GET_GeneNode_SoulSteal</texPath>
+    </graphicData>
+    <descriptionHyperlinks>
+      <GeneDef>BS_ConsumeSoul</GeneDef>
+      <GeneDef>BS_ConsumeSoul_Enslave</GeneDef>
+      <GeneDef>BS_ConsumeSoulOnHit</GeneDef>
+      <GeneDef>BS_AnomalousPsychicPower</GeneDef>
+    </descriptionHyperlinks>
+    <comps>
+      <li Class="GeneExtractorTiers.CompProperties_GeneNode">
+        <geneList>
+          <li>BS_ConsumeSoul</li>
+          <li>BS_ConsumeSoul_Enslave</li>
+          <li>BS_ConsumeSoulOnHit</li>
+          <li>BS_AnomalousPsychicPower</li>
+        </geneList>
+        <Faction>GET_DarkArchotech</Faction>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>

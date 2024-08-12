@@ -1,0 +1,279 @@
+<Defs>
+  <DesignatorDropdownGroupDef>
+    <defName>GET_TrueArchite</defName>
+    <label>Gene Node - Archite</label>
+  </DesignatorDropdownGroupDef>
+
+  <ThingDef ParentName="GET_GeneNodeBaseArchite" Name="GET_GeneNodeTrueArchite" Abstract="True">
+    <designatorDropdown>GET_TrueArchite</designatorDropdown>
+    <costList Inherit="False">
+      <Steel>50</Steel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+      <ComponentSpacer>1</ComponentSpacer>
+      <ArchiteCapsule>1</ArchiteCapsule>
+    </costList>
+  </ThingDef>
+
+  <ThingDef ParentName="GET_GeneNodeTrueArchite">
+    <defName>GET_Ageless</defName>
+    <label>Gene Node - Ageless</label>
+    <description>May you run from death forever."</description>
+    <costList Inherit="False">
+      <Steel>50</Steel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+      <ComponentSpacer>1</ComponentSpacer>
+      <ArchiteCapsule>3</ArchiteCapsule>
+    </costList>
+    <graphicData>
+      <texPath>GeneNodes/GET_GeneNode_Ageless</texPath>
+    </graphicData>
+    <descriptionHyperlinks>
+      <GeneDef>Ageless</GeneDef>
+      <GeneDef>DiseaseFree</GeneDef>
+      <GeneDef MayRequire="RedMattis.BigSmall.Core">BS_TrulyAgeless</GeneDef>
+    </descriptionHyperlinks>
+    <comps>
+      <li Class="GeneExtractorTiers.CompProperties_GeneNode">
+        <geneList>
+          <li>Ageless</li>
+          <li>DiseaseFree</li>
+          <li MayRequire="RedMattis.BigSmall.Core">BS_TrulyAgeless</li>
+        </geneList>
+        <Faction>GET_DarkArchotech</Faction>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="GET_GeneNodeTrueArchite">
+    <defName>GET_Sanguophage</defName>
+    <label>Gene Node - Sanguopage</label>
+    <description>"Take onto yourself my gifts; strive to one day be truly deserving."</description>
+    <costList Inherit="False">
+      <Steel>50</Steel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+      <ComponentSpacer>1</ComponentSpacer>
+      <ArchiteCapsule>2</ArchiteCapsule>
+    </costList>
+    <graphicData>
+      <texPath>GeneNodes/GET_GeneNode_Sanguophage</texPath>
+    </graphicData>
+    <descriptionHyperlinks>
+      <GeneDef>Deathrest</GeneDef>
+      <GeneDef>Deathless</GeneDef>
+      <GeneDef>HemogenDrain</GeneDef>
+      <GeneDef>LowSleep</GeneDef>
+      <GeneDef>FireTerror</GeneDef>
+      <GeneDef>Ageless</GeneDef>
+      <GeneDef>DiseaseFree</GeneDef>
+      <GeneDef>Hemogenic</GeneDef>
+      <GeneDef>Bloodfeeder</GeneDef>
+      <GeneDef>TotalHealing</GeneDef>
+      <GeneDef MayRequire="vanillaracesexpanded.sanguophage">VRE_Hemosmosis</GeneDef>
+      <GeneDef MayRequire="vanillaracesexpanded.sanguophage">VRE_CorpseFeeder</GeneDef>
+      <GeneDef MayRequire="vanillaracesexpanded.sanguophage">VRE_AnimalFeeder</GeneDef>
+    </descriptionHyperlinks>
+    <comps>
+      <li Class="GeneExtractorTiers.CompProperties_GeneNode">
+        <geneList>
+          <li>HemogenDrain</li>
+          <li>LowSleep</li>
+          <li>FireTerror</li>
+          <li>PiercingSpine</li>
+          <li>LongjumpLegs</li>
+          <li>XenogermReimplanter</li>
+          <li MayRequire="vanillaracesexpanded.sanguophage">VRE_Hemosmosis</li>
+          <li MayRequire="vanillaracesexpanded.sanguophage">VRE_CorpseFeeder</li>
+          <li MayRequire="vanillaracesexpanded.sanguophage">VRE_AnimalFeeder</li>
+        </geneList>
+        <geneSetList>
+          <li>
+            <geneList>
+              <li>Ageless</li>
+              <li>DiseaseFree</li>
+              <li>Hemogenic</li>
+              <li>Bloodfeeder</li>
+              <li>TotalHealing</li>
+            </geneList>
+          </li>
+          <li>
+            <geneList>
+              <li>Deathless</li>
+              <li>Deathrest</li>
+              <li>Hemogenic</li>
+              <li>Bloodfeeder</li>
+            </geneList>
+          </li>
+        </geneSetList>
+        <Faction>GET_DarkArchotech</Faction>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="GET_GeneNodeBaseArchite">
+    <defName>GET_Learning</defName>
+    <label>Gene Node - Learning</label>
+    <description>"The brain is more malable, uh malleable, mallaeable, ugh. It can make you learn good". No refunds.</description>
+    <graphicData>
+      <texPath>GeneNodes/GET_GeneNode_Learning</texPath>
+    </graphicData>
+    <descriptionHyperlinks>
+      <GeneDef>Learning_Slow</GeneDef>
+      <GeneDef>Learning_Fast</GeneDef>
+      <GeneDef>GET_Learning_Normal</GeneDef>
+      <GeneDef MayRequire="RedMattis.BigSmall.Core">BS_Passioned_Learning_Gene</GeneDef>
+    </descriptionHyperlinks>
+    <comps>
+      <li Class="GeneExtractorTiers.CompProperties_GeneNode">
+        <geneList>
+          <li>Learning_Slow</li>
+          <li>Learning_Fast</li>
+          <li>GET_Learning_Normal</li>
+          <li MayRequire="RedMattis.BigSmall.Core">BS_Passioned_Learning_Gene</li>
+        </geneList>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="GET_GeneNodeBaseArchite">
+    <defName>GET_GoJuice</defName>
+    <label>Gene Node - GoJuice</label>
+    <description>"Go faster, shoot faster, destroy your enemies faster!". No refunds.</description>
+    <graphicData>
+      <texPath>GeneNodes/GET_GeneNode_Hussar</texPath>
+    </graphicData>
+    <descriptionHyperlinks>
+      <GeneDef>Hair_ShortOnly</GeneDef>
+      <GeneDef>Eyes_Red</GeneDef>
+      <GeneDef>Unstoppable</GeneDef>
+      <GeneDef>Pain_Reduced</GeneDef>
+
+      <GeneDef>WoundHealing_SuperFast</GeneDef>
+      <GeneDef>ChemicalDependency_GoJuice</GeneDef>
+      <GeneDef>AptitudeRemarkable_Shooting</GeneDef>
+      <GeneDef>AptitudeRemarkable_Melee</GeneDef>
+      <GeneDef>Aggression_HyperAggressive</GeneDef>
+      <GeneDef>ToxicEnvironmentResistance_Partial</GeneDef>
+    </descriptionHyperlinks>
+    <comps>
+      <li Class="GeneExtractorTiers.CompProperties_GeneNode">
+        <geneList>
+          <li>Hair_ShortOnly</li>
+          <li>Eyes_Red</li>
+          <li>Unstoppable</li>
+          <li>Pain_Reduced</li>
+          <li>ChemicalDependency_GoJuice</li>
+          <li>Aggression_HyperAggressive</li>
+          <li>ToxicEnvironmentResistance_Partial</li>
+        </geneList>
+        <geneSetList>
+          <li>
+            <geneList>
+              <li>WoundHealing_SuperFast</li>
+              <li>ChemicalDependency_GoJuice</li>
+            </geneList>
+          </li>
+          <li>
+            <geneList>
+              <li>AptitudeRemarkable_Shooting</li>
+              <li>AptitudeRemarkable_Melee</li>
+              <li>ChemicalDependency_GoJuice</li>
+            </geneList>
+          </li>
+        </geneSetList>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="GET_GeneNodeBase">
+    <defName>GET_GN_ColorPack</defName>
+    <label>Gene Node - Color</label>
+    <description>"The hair and skin-color of your dreams!".</description>
+    <costList Inherit="False">
+      <Steel>50</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+      <Silver>500</Silver>
+    </costList>
+    <graphicData>
+      <texPath>GeneNodes/GET_GeneNode_Colors</texPath>
+    </graphicData>
+    <descriptionHyperlinks>
+      <GeneDef>Skin_DeepRed</GeneDef>
+      <GeneDef>Skin_PaleRed</GeneDef>
+      <GeneDef>Skin_InkBlack</GeneDef>
+      <GeneDef>Skin_PaleYellow</GeneDef>
+      <GeneDef>Skin_LightGray</GeneDef>
+      <GeneDef>Skin_Green</GeneDef>
+      <GeneDef>Skin_Blue</GeneDef>
+      <GeneDef MayRequire="RedMattis.BigSmall.Core">BS_Skin_DarkAsh</GeneDef>
+      <GeneDef MayRequire="RedMattis.BigSmall.Core">BS_SkinFrostWhite</GeneDef>
+      <GeneDef MayRequire="RedMattis.BigSmall.Core">BS_SkinPermafrost</GeneDef>
+      <GeneDef MayRequire="RedMattis.BigSmall.Core">BS_Skin_Marble_White</GeneDef>
+      <GeneDef MayRequire="RedMattis.BigSmall.Core">BS_SkinBurningOrange</GeneDef>
+      <GeneDef MayRequire="RedMattis.BigSmall.Core">BS_VeryLightOrange</GeneDef>
+      <GeneDef MayRequire="RedMattis.BigSmall.Core">BS_SkinBloodRed</GeneDef>
+      <GeneDef MayRequire="RedMattis.BigSmall.Core">BS_CreamSkin</GeneDef>
+      <GeneDef MayRequire="RedMattis.BigSmall.Core">BS_LightGreenSkin</GeneDef>
+      
+      <GeneDef MayRequire="RedMattis.BigSmall.Core">Hair_MediumRed</GeneDef>
+      <GeneDef MayRequire="RedMattis.BigSmall.Core">Hair_MediumBlue</GeneDef>
+      <GeneDef MayRequire="RedMattis.BigSmall.Core">BS_Hair_TrueWhite</GeneDef>
+      <GeneDef MayRequire="RedMattis.BigSmall.Core">BS_HairFrostWhite</GeneDef>
+      <GeneDef MayRequire="RedMattis.BigSmall.Core">BS_HairPermafrost</GeneDef>
+      <GeneDef MayRequire="RedMattis.BigSmall.Core">BS_BloodHair</GeneDef>
+      <GeneDef>Hair_SnowWhite</GeneDef>
+      <GeneDef>Hair_InkBlack</GeneDef>
+      <GeneDef>Hair_Gray</GeneDef>
+      <GeneDef>Hair_DarkBlack</GeneDef>
+      <GeneDef>Hair_MidBlack</GeneDef>
+      <GeneDef>Hair_Blonde</GeneDef>
+      <GeneDef>Hair_Pink</GeneDef>
+      <GeneDef>Hair_LightPurple</GeneDef>
+      <GeneDef>Hair_LightTeal</GeneDef>
+      <GeneDef>Hair_LightGreen</GeneDef>
+      <GeneDef>Hair_LightBlue</GeneDef>
+
+    </descriptionHyperlinks>
+    <comps>
+      <li Class="GeneExtractorTiers.CompProperties_GeneNode">
+        <geneList>
+          <li>Skin_DeepRed</li>
+          <li>Skin_PaleRed</li>
+          <li MayRequire="RedMattis.BigSmall.Core">BS_Skin_DarkAsh</li>
+          <li MayRequire="RedMattis.BigSmall.Core">BS_Skin_Marble_White</li>
+          <li>Skin_InkBlack</li>
+          <li>Skin_PaleYellow</li>
+          <li>Skin_LightGray</li>
+          <li>Skin_Green</li>
+          <li>Skin_Blue</li>
+          <li MayRequire="RedMattis.BigSmall.Core">BS_SkinFrostWhite</li>
+          <li MayRequire="RedMattis.BigSmall.Core">BS_SkinPermafrost</li>
+          <li MayRequire="RedMattis.BigSmall.Core">BS_Skin_Marble_White</li>
+          <li MayRequire="RedMattis.BigSmall.Core">BS_SkinBurningOrange</li>
+          <li MayRequire="RedMattis.BigSmall.Core">BS_VeryLightOrange</li>
+          <li MayRequire="RedMattis.BigSmall.Core">BS_SkinBloodRed</li>
+          <li MayRequire="RedMattis.BigSmall.Core">BS_CreamSkin</li>
+          <li MayRequire="RedMattis.BigSmall.Core">BS_LightGreenSkin</li>
+          <li MayRequire="RedMattis.BigSmall.Core">Hair_MediumRed</li>
+          <li MayRequire="RedMattis.BigSmall.Core">Hair_MediumBlue</li>
+          <li MayRequire="RedMattis.BigSmall.Core">BS_Hair_TrueWhite</li>
+          <li MayRequire="RedMattis.BigSmall.Core">BS_HairFrostWhite</li>
+          <li MayRequire="RedMattis.BigSmall.Core">BS_HairPermafrost</li>
+          <li MayRequire="RedMattis.BigSmall.Core">BS_BloodHair</li>
+          <li>Hair_SnowWhite</li>
+          <li>Hair_InkBlack</li>
+          <li>Hair_Gray</li>
+          <li>Hair_DarkBlack</li>
+          <li>Hair_MidBlack</li>
+          <li>Hair_Blonde</li>
+          <li>Hair_Pink</li>
+          <li>Hair_LightPurple</li>
+          <li>Hair_LightTeal</li>
+          <li>Hair_LightGreen</li>
+          <li>Hair_LightBlue</li>
+        </geneList>
+        <Faction>NONE</Faction>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>

@@ -1,0 +1,9 @@
+<loadFolders>
+  <v1.5>
+    <li>/</li>
+    <li>1.5</li>
+    <li IfModActive="RedMattis.BigSmall.Core">1.5/Mods/BigAndSmall</li>
+    <li IfModActive="RedMattis.LamiasAndOtherSnakes">1.5/Mods/Lamia</li>
+    <li IfModActive="sarg.alphagenes">1.5/Mods/AlphaGenes</li>
+  </v1.5>
+</loadFolders>

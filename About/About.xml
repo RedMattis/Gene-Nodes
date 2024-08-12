@@ -1,0 +1,35 @@
+<ModMetaData>
+	<name>Gene Nodes - Genes for Sale</name>
+	<author>RedMattis</author>
+	<supportedVersions>
+		<li>1.5</li>
+	</supportedVersions>
+	<modIconPath IgnoreIfNoMatchingField="True">BS_ModIcon</modIconPath>
+	<modDependencies>
+		<li>
+			<packageId>Ludeon.RimWorld.Biotech</packageId>
+			<displayName>Biotech</displayName>
+		</li>
+		<li>
+        <packageId>brrainz.harmony</packageId>
+        <displayName>Harmony</displayName>
+        <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+        <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+		</li>
+		<li>
+			<packageId>RedMattis.GeneExtractor</packageId>
+			<displayName>Gene Extractor Tiers</displayName>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/3016454783</steamWorkshopUrl>
+	</li>
+	</modDependencies>
+	<loadAfter>
+		<li>Ludeon.RimWorld</li>
+		<li>Ludeon.RimWorld.Royalty</li>
+		<li>Ludeon.RimWorld.Ideology</li>
+		<li>Ludeon.RimWorld.Biotech</li>
+		<li>brrainz.harmony</li>
+		<li>RedMattis.GeneExtractor</li>
+	</loadAfter>
+	<packageId>RedMattis.GeneNodes</packageId>
+	<description>This mod adds more Gene Nodes with predefined/themed content for you to build or purchase. Suitable for those who would rather trade resources for their chosen genes rather than build a lab and extract.</description>
+</ModMetaData>
