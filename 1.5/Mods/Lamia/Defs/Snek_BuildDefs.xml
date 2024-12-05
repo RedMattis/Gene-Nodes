@@ -22,6 +22,8 @@
       <GeneDef>BS_SnekEngulf</GeneDef>
       <GeneDef>Cannibal</GeneDef>
       <GeneDef>BS_DragonHead</GeneDef>
+      <GeneDef>BS_DragonEars</GeneDef>
+      <GeneDef>BS_DragonHorns</GeneDef>
     </descriptionHyperlinks>
     <comps>
       <li Class="GeneExtractorTiers.CompProperties_GeneNode">
@@ -38,6 +40,8 @@
           <li>VerySleepy</li>
           <li>BS_StickyAcidSpray</li>
           <li>BS_DragonHead</li>
+          <li>BS_DragonEars</li>
+          <li>BS_DragonHorns</li>
         </geneList>
         <geneSetList>
           <li>
