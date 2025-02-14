@@ -156,7 +156,7 @@
 
   <ThingDef ParentName="GET_GeneNodeTrueArchite">
     <defName>GET_SoulPower</defName>
-    <label>Gene Node - Anomalous Power</label>
+    <label>Gene Node - Soul Power</label>
     <description>Unleach the void."</description>
     <costList Inherit="False">
       <Steel>50</Steel>
