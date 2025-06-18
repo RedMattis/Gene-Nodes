@@ -1,0 +1,57 @@
+<Defs>
+  <ThingDef ParentName="GET_GeneNodeBaseArchite">
+    <defName>GET_SnekTribes</defName>
+    <label>Gene Node - Snek Tribes</label>
+    <description>"It is actually more than fair value, I don't know why people keep calling it the woe-pack.". No refunds.</description>
+    <graphicData>
+      <texPath>GeneNodes/GET_GeneNode_SnekTribes</texPath>
+    </graphicData>
+    <designatorDropdown>GET_GeneNode_BS</designatorDropdown>
+    <descriptionHyperlinks>
+      <GeneDef>LoS_PerfectCoiledJump</GeneDef>
+      <GeneDef>LoS_SnekSnoot</GeneDef>
+      <GeneDef>LoS_Snake_Tail</GeneDef>
+      <GeneDef>LoS_Anaconda_Frame</GeneDef>
+      <GeneDef>LoS_AdderFrame</GeneDef>
+      <GeneDef>BS_StickyAcidSpray</GeneDef>
+      <GeneDef>VeryNakedSpeed</GeneDef>
+      <GeneDef>VerySleepy</GeneDef>
+      <GeneDef>StrongStomach</GeneDef>
+      <GeneDef>RobustDigestion</GeneDef>
+      <GeneDef>BS_ToughSkin</GeneDef>
+      <GeneDef>BS_SnekEngulf</GeneDef>
+      <GeneDef>Cannibal</GeneDef>
+      <GeneDef>BS_DragonHead</GeneDef>
+      <GeneDef>BS_DragonEars</GeneDef>
+      <GeneDef>BS_DragonHorns</GeneDef>
+    </descriptionHyperlinks>
+    <comps>
+      <li Class="GeneExtractorTiers.CompProperties_GeneNode">
+        <geneList>
+          <li>LoS_PerfectCoiledJump</li>
+          <li>LoS_SnekSnoot</li>
+          <li>LoS_Snake_Tail</li>
+          <li>LoS_Anaconda_Frame</li>
+          <li>LoS_AdderFrame</li>
+          <li>VeryNakedSpeed</li>
+          <li>BS_ToughSkin</li>
+          <li>BS_SnekEngulf</li>
+          <li>Cannibal</li>
+          <li>VerySleepy</li>
+          <li>BS_StickyAcidSpray</li>
+          <li>BS_DragonHead</li>
+          <li>BS_DragonEars</li>
+          <li>BS_DragonHorns</li>
+        </geneList>
+        <geneSetList>
+          <li>
+            <geneList>
+              <li>StrongStomach</li>
+              <li>RobustDigestion</li>
+            </geneList>
+          </li>
+        </geneSetList>
+      </li>
+    </comps>
+  </ThingDef>
+</Defs>

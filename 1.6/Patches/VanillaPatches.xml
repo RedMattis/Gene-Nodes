@@ -1,0 +1,26 @@
+<Patch>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName="GeneAssembler"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+    <value>
+      <li>GET_Learning</li>
+      <li>GET_GoJuice</li>
+      <li>GET_GN_ColorPack</li>
+
+      <li>GET_Ageless</li>
+      <li>GET_Sanguophage</li>
+
+      <li MayRequire="RedMattis.BigSmall.Core">GET_RepairApparel</li>
+      <li MayRequire="RedMattis.BigSmall.Core">GET_Ogre</li>
+      <li MayRequire="RedMattis.BigSmall.Core">GET_Smol</li>
+      <li MayRequire="RedMattis.BigSmall.Core">GET_Psychic</li>
+      <li MayRequire="RedMattis.BigSmall.Core">GET_BudgetDeathless</li>
+      <li MayRequire="RedMattis.BigSmall.Core">GET_SoulPower</li>
+      <li MayRequire="RedMattis.BigSmall.Core">GET_SoulStealer</li>
+
+      <li MayRequire="RedMattis.LamiasAndOtherSnakes">GET_SnekTribes</li>
+      
+      <li MayRequire="sarg.alphagenes">GET_AG_Helixien</li>
+      <li MayRequire="sarg.alphagenes">GET_AG_Beauty</li>
+    </value>
+  </Operation>
+</Patch>

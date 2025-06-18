@@ -1,0 +1,99 @@
+<Defs>
+  <DesignatorDropdownGroupDef>
+    <defName>GET_GeneNode_AG</defName>
+    <label>Gene Node - AG</label>
+  </DesignatorDropdownGroupDef>
+
+  <ThingDef ParentName="GET_GeneNodeBaseArchite">
+    <defName>GET_AG_Beauty</defName>
+    <label>Gene Node - AG Beauty</label>
+    <description>"Make or become the waifu or husbando of your dreams". No refunds.</description>
+    <costList Inherit="False">
+      <Steel>50</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+      <ArchiteCapsule>1</ArchiteCapsule>
+      <Silver>1000</Silver>
+    </costList>
+    <graphicData>
+      <texPath>GeneNodes/GET_GeneNode_AGBeauty</texPath>
+    </graphicData>
+    <designatorDropdown>GET_GeneNode_AG</designatorDropdown>
+    <descriptionHyperlinks>
+      <GeneDef>AG_Beauty_Angelic</GeneDef>
+      <GeneDef>AG_InnerPeace</GeneDef>
+      <GeneDef>AG_ReducedRaidPresence</GeneDef>
+      <GeneDef>AG_PsychicAbility_Masterful</GeneDef>
+      <GeneDef>Libido_High</GeneDef>
+      <GeneDef>AG_FeatheredWings</GeneDef>
+      <GeneDef>AG_Female</GeneDef>
+      <GeneDef>AG_Male</GeneDef>
+      <GeneDef>AptitudeRemarkable_Artistic</GeneDef>
+    </descriptionHyperlinks>
+    <comps>
+      <li Class="GeneExtractorTiers.CompProperties_GeneNode">
+        <geneList>
+          <li>AG_Beauty_Angelic</li>
+          <li>AG_InnerPeace</li>
+          <li>AG_ReducedRaidPresence</li>
+          <li>AG_PsychicAbility_Masterful</li>
+          <li>Libido_High</li>
+          <li>AG_FeatheredWings</li>
+          <li>AG_Female</li>
+          <li>AG_Male</li>
+          <li>AptitudeRemarkable_Artistic</li>
+        </geneList>
+        <Faction>AG_OutlanderCivilUnion</Faction>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="GET_GeneNodeBaseArchite">
+    <defName>GET_AG_Helixien</defName>
+    <label>Gene Node - AG Helixan</label>
+    <description>"Actually, you know what? Just take it. It's fine. Really."</description>
+    <costList Inherit="False">
+      <Steel>50</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+      <Silver>5</Silver>
+    </costList>
+    <graphicData>
+      <texPath>GeneNodes/GET_GeneNode_AGHelixian</texPath>
+    </graphicData>
+    <designatorDropdown>GET_GeneNode_AG</designatorDropdown>
+    <descriptionHyperlinks>
+      <GeneDef>AG_SlugVoice</GeneDef>
+      <GeneDef>AG_CorpseFeeding</GeneDef>
+      <GeneDef>MoveSpeed_Slow</GeneDef>
+      <GeneDef>AG_SlugBody</GeneDef>
+      <GeneDef>AG_SlugFace</GeneDef>
+      <GeneDef>AG_ChameleonVision</GeneDef>
+      <GeneDef>AG_Beauty_VeryVeryUgly</GeneDef>
+      <GeneDef>AG_LungRotStrength</GeneDef>
+    </descriptionHyperlinks>
+    <comps>
+      <li Class="GeneExtractorTiers.CompProperties_GeneNode">
+        <geneList>
+          <li>AG_CorpseFeeding</li>
+          <li>MoveSpeed_Slow</li>
+        </geneList>
+        <geneSetList>
+          <li>
+            <geneList>
+              <li>AG_SlugBody</li>
+              <li>AG_SlugFace</li>
+              <li>AG_ChameleonVision</li>
+              <li>AG_Beauty_VeryVeryUgly</li>
+            </geneList>
+          </li>
+          <li>
+            <geneList>
+              <li>AG_SlugVoice</li>
+              <li>AG_LungRotStrength</li>
+            </geneList>
+          </li>
+        </geneSetList>
+        <Faction>AG_OutlanderCivilUnion</Faction>
+      </li>
+    </comps>
+  </ThingDef>
+</Defs>

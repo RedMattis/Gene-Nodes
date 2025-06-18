@@ -6,4 +6,11 @@
     <li IfModActive="RedMattis.LamiasAndOtherSnakes">1.5/Mods/Lamia</li>
     <li IfModActive="sarg.alphagenes">1.5/Mods/AlphaGenes</li>
   </v1.5>
+  <v1.6>
+    <li>/</li>
+    <li>1.6</li>
+    <li IfModActive="RedMattis.BigSmall.Core">1.6/Mods/BigAndSmall</li>
+    <li IfModActive="RedMattis.LamiasAndOtherSnakes">1.6/Mods/Lamia</li>
+    <li IfModActive="sarg.alphagenes">1.6/Mods/AlphaGenes</li>
+  </v1.6>
 </loadFolders>
